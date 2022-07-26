@@ -1,0 +1,61 @@
+<!--including head/navbar partials-->
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %> 
+
+<!--projects page header-->
+<section class="container-fluid shirleys-art-studio-header header-text px-0">
+    <h1 class="text-center project-text mb-5" style="color: rgb(255, 255, 255); font-size: 9vw;">Shirley's Art Studio</h1>
+    <p class="text-center mx-5 py-5" style="color: rgb(255, 255, 255);">
+    </p>
+</section>
+
+<!--projects about section-->
+<main class="container mt-5">
+    <section class="container py-5">
+      <h2>Website Launch Date</h2>
+      <h2 style="color:darkgrey;">July 2022</h2>
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <div class="row"> 
+                <div class="image-column col-lg-6 col-md-12 col-sm-12 order-2">
+                    <div class="">
+                        <figure class=""><a href="#"><img src="/images/ShirleyCheckout.png" class="img-fluid" alt="Shirleys Art Studio preview image" id="projectImg"></a></figure>
+                        <figure class="image-2 mt-5"><a href="#"><img src="/images/ShirleysStudio.png" class="img-fluid" alt="Shirleys Art Studio preview mobile image" id="projectImg2"></a></figure>
+                    </div>
+                </div>
+                        
+                <div class="content-column col-lg-6 col-md-12 col-sm-12 order-1">
+                    <div class="">
+                        <div class="sec-title">
+                            <h2 class="" style="color: black;">About the project</h2>
+                        </div>
+                        <p class="px-3">
+                            Shirley's Art Studio is an online gallery website with a built in online store which feature secure payments using Paypal and Visa. At Layerlabs I wanted to re-create a live art gallery, showcasing and displaying each of Shirley's art pieces.
+                            This was key to creating the look and feel of the website. We wanted to make sure the paintings brought out the color while the website theme remained clean. I 
+                            implemented a responsive design, suitable for all devices as well as clear navigation tools, Search Engine Optimization and security features. With all this initialized Shirley was thrilled with the end result. Having her own website to 
+                            showcase and sell her artistry allows Shirley a platform to share her work beyond the gallery and reach even more enthusiastic art lovers who can now get in touch from anywhere in the world. 
+                        </p>
+                        <div class="contianer my-5">
+                            <a href="https://shirleysartstudio.com" class="btn" id="gradientButton">VISIT SITE <i class="fa-solid fa-chevron-right"></i></button>
+                                <a class="fa-brands fa-github fa-2xl px-3 py-4 mt-auto pl-4" style="color: black;" id="projectIcon" href="https://github.com/TropicalXU"></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--back button container-->
+    <div class="container">
+    <a href="javascript:history.back()" class="btn my-5" id="gradientButton"><span><i class="fa-solid fa-chevron-left"></i></span> GO BACK</a>
+    </div>
+    <!--including cookie partial-->
+    <%- include('../partials/cookieConsent') %> 
+</main>
+
+<!--including scripts/footer partials-->
+<%- include('../partials/scripts') %> 
+<%- include('../partials/footer') %> 
+    
+</body>
+</html>

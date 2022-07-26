@@ -1,0 +1,40 @@
+{
+  "name": "layerlabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Sean Hackett",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "cloudinary": "^1.30.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "connect-mongodb-session": "^3.1.1",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.7",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-session": "^1.17.3",
+    "font-awesome": "^4.7.0",
+    "googleapis": "^104.0.0",
+    "helmet": "^5.1.0",
+    "joi": "^17.6.0",
+    "jquery": "^3.6.0",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^6.7.5",
+    "nodemailer-express-handlebars": "^5.0.0",
+    "nodemailer-mailgun-transport": "^2.1.4",
+    "nodemon": "^2.0.16",
+    "sanitize-html": "^2.7.0"
+  }
+}

@@ -1,0 +1,78 @@
+<!--including head/navbar partials-->
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %> 
+
+<!--projects page main section-->
+<main class="projects-background">
+   <!--projects page header-->
+  <section class="container-fluid header-section-projects header-text px-0">
+     <h1 class="text-center mb-5 py-5" style="color: rgb(255, 255, 255);font-size: 9vw;">PROJECTS</h1>
+   </section>
+   <!--projects page intoduction text-->
+   <section class="my-5">
+     <div class="container d-block text-center">
+       <h1 class="text-center bounceIn" style="font-size: 60px;">My work<span id="gradientTextTwo" style="font-size: 85px;">．</span></h1>
+       <p class="pt-5" style="color: rgb(30, 30, 30);font-size: 20px;">Here are a few projects and websites I have designed and created here at Layerlabs using the knowledge and expertise I have aquired throughout my web development journey. 
+         I created these applications from the ground up. Each website is intergrated with fully responsive layouts and designs for all devices using tools such as Javascript, CSS and HTML.</p>
+       </p>
+      </div>
+   </section>
+   <!--projects container-->
+   <main class="box-container pt-5">
+      <section class="container px-0" id="projectContainer">
+         <div class="row align-items-center">
+            <div class="col-md-6 project-content order-1">
+               <h2 class="py-5">Viewpoint Ireland</h2>
+               <p>
+                  A list of key scenic locations to view and stay in Ireland. This website features Register and Login options which 
+                  allow the user to post and upload images alongside a location of their choice. The application also features a built 
+                  in map so you can view and pinpoint the exact location of each site. 
+               </p>
+               <a href="/projects/viewpointIreland" class="btn my-4" id="gradientButton">VIEW PROJECT <i class="fa-solid fa-chevron-right"></i></button>
+               <a class="fa-brands fa-github fa-2xl px-3 py-4 pl-4" style="color: black;" id="projectIcon" href="https://github.com/TropicalXU"></a>
+            </div>
+            <div class="col-md-6 project-content d-flex justify-content-center project-img-one order-2" id="projectImg">
+            </div>
+         </div>
+      </section>
+   </main>
+   <main class="box-container py-3">
+     <section class="container px-0" id="projectContainer">
+        <div class="row align-items-center">
+           <div class="col-md-6 project-content order-2">
+              <h2 class="py-5">Shirley's Art Studio</h2>
+              <p>
+               A small business webiste built for an artist to showcase their work and passion for art. 
+               This website features a built in store with secure payment options such as Paypal and Visa. 
+               You can easily browse the gallery, find a painting you like and Add to Cart. 
+               The checkout experience is quick and easy, if you have a Paypal account just sign in and make a purchase within seconds.
+              </p>
+              <a href="/projects/shirleys-art-studio" class="btn my-4" id="gradientButton">VIEW PROJECT <i class="fa-solid fa-chevron-right"></i></button>
+              <a class="fa-brands fa-github fa-2xl px-3 py-4 pl-4" style="color: black;" id="projectIcon" href="https://github.com/TropicalXU"></a>
+           </div>
+           <div class="col-md-6 project-content d-flex justify-content-center shirleys-studio order-1" id="projectImg">
+           </div>
+        </div>
+     </section>
+   </main>
+  
+
+  <!--back button-->
+  <div class="container d-flex justify-content-center my-5">
+    <a href="javascript:history.back()" class="btn  mx-2" id="gradientButton"><i class="fa-solid fa-chevron-left"></i> GO BACK</a>
+  </div>
+  <!--scroll feature-->
+  <div class="d-flex justify-content-end px-3">
+    <a class="btn scroll-top px-3 py-3" href="#navBrand"><i class="fa-solid fa-arrow-up"></i></a>
+  </div> 
+
+
+<!--including cookie consent/scripts/footer partials-->
+<%- include('../partials/cookieConsent') %> 
+<%- include('../partials/scripts') %> 
+<%- include('../partials/footer') %> 
+  
+</main>
+</body>
+</html>
+

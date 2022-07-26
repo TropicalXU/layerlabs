@@ -1,0 +1,94 @@
+<!--Including head/navbar templates from partials folder-->
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %> 
+
+<!--About page header-->
+<section class="container-fluid header-section-about header-text mb-5">
+  <h1 class="text-center mb-5" style="font-size: 9vw;">Layerlabs</h1>
+  <h4 class="text-center mx-5" style="color: rgb(255, 255, 255);">
+     Step into the future of web design
+  </h4>
+</section>
+
+<div class="container  mt-5">
+  <h2 class="text-center bounceIn py-3" style="color: rgb(170, 170, 170);font-size: 40px;">PLAN | VISUALIZE | DESIGN</h2>
+</div>
+
+<!--About page brand logo-->
+<div class="col d-flex justify-content-center" id="layerIcon">
+   <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons"><img class="row-md-6 img-fluid height:100px" style="width:80px; height: 80px;" src="/images/layerBrand.png" alt=""></a>
+</div>
+</div>
+
+<!--About section main content-->
+<section class="about-section">
+   <div class="container">
+       <div class="row"> <!--image section-->
+           <div class="image-column col-lg-6 col-md-12 col-sm-12 order-2">
+               <div class="">
+                   <figure class=""><a href="#"><img src="/images/layerLabsSite.png" class="img-fluid" alt="Layerlabs website image" id="projectImg"></a></figure>
+                   <figure class="image-2 mt-5"><a href="#"><img src="/images/me.jpg" class="img-fluid" alt="Site owner profile image" style="width: 200px;height:250px" id="projectImg2"></a></figure>
+               </div>
+           </div>
+             <!--content section-->      
+           <div class="content-column col-lg-6 col-md-12 col-sm-12 order-1">
+               <div class="">
+                   <div class="sec-title">
+                       <h2 class="" style="color: black;">About</h2>
+                   </div>
+                   <p class="" style="font-size: 20px;">
+                     Hi, my name is Sean Hackett and welcome to my website Layerlabs. There are many layers to consider as a Full
+                     Stack Web Developer from writing the back-end code to building the framework of the application, planning and designing the front-end to full deployment of the website.
+                     </br>
+                  </p>
+                  <p class=""style="font-size: 20px;">As an individual I am very creative yet also curious.
+                     When I began my journey into web development that curiosity to discover and learn all aspects of the development proccess in building a
+                     full scale web application was very evident. I created this
+                     website with my love for web development specifically creation & design.
+                  </p>
+                <div class=" py-5">
+                  <a href="/about/bio" class="btn mx-2 my-2" id="gradientButton">PERSONAL PORTFOLIO <i class="fa-solid fa-chevron-right"></i></a>
+               </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+<!--layerlabs info content-->
+<section class="dark-section-round my-3 py-5 px-5">
+  <div class="box container text-center px-5" id="">
+      <div class="container-fluid d-block text-center py-5">
+         <h1 class="text-center bounceIn" style="font-size: 60px;color: white;">Why <span id="gradientTextTwo">Layerlabs?</span></h1>
+         <p class="py-5" style="color: rgb(255, 255, 255);font-size: 20px;">
+           At Layerlabs I want to bring my own touch
+           giving you the best and most responsive
+           website design possible. What you want from a website can vary yet
+           what matters most is the experience yourself and your users have. A clean, cutting edge design
+           is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to
+           color palettes, security and much more I am with you every step of the way. Check out the discover page to get inspired or view my previous work for
+           reference.
+         </p>
+      </div>
+      <div class="container-fluid py-4">
+        <h2 style="color: white;" class="text-center py-3">Let's create something together.</h2>
+        </div>
+        <div class="container d-flex justify-content-center pb-4">
+        <a href="/contact" class="btn" id="gradientBtnReverse">GET IN TOUCH <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+   </div>
+</section>
+
+<div class="container d-flex justify-content-center my-4">
+  <a href="javascript:history.back()" class="btn mx-2 my-3" id="gradientButton"><i class="fa-solid fa-chevron-left"></i> GO BACK</a>
+</div>
+
+<!--including cookie consent partial-->
+<%- include('../partials/cookieConsent') %> 
+</main>
+<!--including scripts/footer partials-->
+<%- include('../partials/scripts') %> 
+<%- include('../partials/footer') %> 
+    
+</body>
+</html>
+    

@@ -1,0 +1,172 @@
+<!--Including head/navbar templates from partials folder-->
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %> 
+
+<!--home page intro container-->
+<section class="mt-3">
+   <%- include('../partials/flash') %> 
+  <div class="row container-fluid" id="mainImg">
+     <div class="col-6 col-lg-6 d-flex wrapper-main">
+        <div class="container-fluid" id="welcomeSlot">
+           <div class="col-10 col-lg-8 mb-5 mb-md-0" id="">
+              <h1 class="mb-3 mt-9 landing-text font-white" style="color: white;">Welcome to layerlabs.io</h1>
+              <h1 style="font-size: 4vw; color: rgb(255, 255, 255); font-weight: 50px; opacity: .4;" id="layerLabsFont">STEP INTO THE <span id="">FUTURE</span></h1></br>
+              <h2 id="layerLabsFont" style="font-style: italic; font-weight: 600;font-size: 3vw;">OF WEB DESIGN</h2>
+              <div id="icons">
+                 <a class="fa-brands fa-medium fa-2xl px-2" href="https://medium.com/@layerlabs.io"></a>
+                 <a class="fa-brands fa-instagram fa-2xl px-2" href="https://www.instagram.com/layerlabs.io"></a>
+                 <a class="fa-brands fa-github fa-2xl px-2" href="https://github.com/TropicalXU"></a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="col d-flex justify-content-center" id="layerIcon">
+   <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons"><img class="row-md-6 img-fluid height:100px" style="width:50px; height: 50px;" src="/images/layerBrand.png" alt=""></a>
+  </div>
+</section>
+
+<!--get inspired section-->
+<section class="box-container container-fluid">
+   <div class="text-center">
+      <div class="container-fluid py-5">
+         <h2 style="font-size: 60px;" class="bounceIn">
+            Get<span style="font-size:60px" id="gradientTextTwo"> Inspired</span> 
+         </h2>
+         <p class="py-3" style="color: rgb(0, 0, 0);">At Layer Labs you can discover what you're looking for in a website!</p>
+         <div class="row container-fluid d-flex justify-content-center">
+            <div class="box container-box-three d-flex align-items-center" id="discoverOne">
+               <h2 class="text-center text-white mx-auto" style="opacity: .6;">Develop a plan</h2>
+            </div>
+            <div class="box container-box-three d-flex align-items-center" id="discoverTwo">
+               <h2 class="text-center text-white mx-auto" style="opacity: .6;">Choose your style</h2>
+            </div>
+            <div class="box container-box-three d-flex align-items-center" id="discoverThree">
+               <h2 class="text-center text-white mx-auto" style="opacity: 1;">Create your brand</h2>
+            </div>
+         </div>
+         <div class="container d-flex justify-content-center my-4">
+            <a href="/discover" class="btn btn mx-2" id="gradientButton">DISCOVER<span><i class="fa-solid fa-chevron-right px-2"></i></span></a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!--about creator section-->
+<section class="section-img-about dark-section-round mx-6 py-5 my-4" >
+  <div class="row align-items-center text-center content" >
+     <div class="col-md-6 order-2 order-md-1">
+        <img src="/images/me.JPG" alt="" class="img-fluid" style="width: 300px; height:350px"  id="aboutImg">
+     </div>
+     <div id="" class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+           <div class="col-10 col-lg-8  mb-md-0">
+              <h2>Sean Hackett</h2>
+              <img src="" alt="" class="d-none d-lg-inline">
+              <p>Founder and creator of Layerlabs. I am a Junior Full Stack Web Developer based in Toronto. I am a very driven and well organized individual with great attention to detail. I am also very
+               creative always thinking outside the box, in search of new ideas and possibilities. 
+              </p>
+              <a class="btn mt-3" href="/about/bio" id="gradientBtnReverse">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+
+
+<!--projects section-->
+<div class="container-fluid py-5">
+  <h2 class="mt-5 text-center" style="font-size: 60px;">Check out some of my work!</h2>
+</div>
+
+
+<main class="container-fluid py-4">
+   <section class="container responsive" id="projectContainer">
+      <div class="row align-items-center">
+         <div class="col project-content order-1">
+            <h2 class="py-5">Shirley's Art Studio</h2>
+            <p>
+               A small business webiste built for an artist to showcase their work and passion for art. This website features a built in store with secure payment options such as Paypal and Visa. You can easily browse the gallery, find a painting you like and Add to Cart. The checkout experience is quick and easy, if you have a Paypal account just sign in and make a purchase within seconds.
+            </p>
+            <a href="/projects/shirleys-art-studio" class="btn my-4" id="gradientButton">VIEW PROJECT <i class="fa-solid fa-chevron-right"></i></button>
+            <a class="fa-brands fa-github fa-2xl px-3 py-4 pl-4" style="color: black;" id="projectIcon" href="https://github.com/TropicalXU"></a>
+         </div>
+         <div class="container-fluid col-md-6 d-flex justify-content-center shirleys-studio order-2" id="projectImg">
+         </div>
+      </div>
+   </section>
+</main>
+
+<div class="container-fluid d-flex align-items-center mt-3 mb-5">
+   <a href="/projects" class="btn mx-auto my-3" id="gradientButton">VIEW MORE <i class="fa-solid fa-chevron-right"></i></a>
+</div>
+
+<!--contact form section-->
+<section class="dark-section-round d-flex justify-content-center mb-3 my-5 py-5">
+  <div class="text-center">
+     <div class="container-fluid">
+        <h2 style="color:rgb(255, 255, 255); font-size: 4vw;" class="py-5">
+           Get<span style="font-size: 4vwpx;" id="gradientTextTwo"> in touch</span> 
+        </h2>
+        <section class="container contact-form d-flex">
+           <form action="/home" method="POST" class="container d-block justify-content-center contact">
+              <div class="row pb-3">
+                 <div class="col-12">
+                    <input type="text" class="form-control contact" id="name" name="name" placeholder="Fullname" aria-label="First name" required>
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="col-12">
+                    <input type="text" class="form-control contact" id="email" name="email" placeholder="@email.com" aria-label="email" required>
+                 </div>
+                 <div class="col-12 py-3">
+                    <input type="text" class="form-control contact" id="subject" name="subject" placeholder="Subject" aria-label="Last name" required>
+                 </div>
+              </div>
+              <div class="col-12 mb-3">
+                 <textarea class="form-control contact" id="text" name="text" rows="3" placeholder="Message" required></textarea>
+              </div>
+              <div class=" my-3 py-3">
+                 <button class="btn gradient-btn  mx-auto" id="submit" type="submit" name="submit" value="Send Message">SEND MESSAGE</button>
+              </div>
+           </form>
+        </section>
+     </div>
+  </div>
+</section>
+
+ <!--including cookie consent/scripts and footer partials-->
+<%- include('../partials/cookieConsent') %> 
+<%- include('../partials/scripts') %> 
+<%- include('../partials/footer') %> 
+
+
+
+
+<script>
+   $('form').on('submit', (e) => {
+    
+       const fullname = $('#name').val().trim();
+      //  const lastname = $('#lastname').val().trim();
+       const email = $('#email').val().trim();
+       const subject = $('#subject').val().trim();
+       const text = $('#text').val().trim();
+
+       const data = {
+           name,
+           email,
+           subject,
+           text,
+           
+       }
+
+       $.post('/home', data, function() {
+           console.log('Server recieved our data');
+       });
+
+   });;
+</script> 
+
+</main>
+</body>
+</html>

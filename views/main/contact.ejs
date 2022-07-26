@@ -1,0 +1,81 @@
+<!--Including head/navbar templates from partials folder-->
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %> 
+
+<!--including flash partial-->
+<main class="container-fluid">
+   <%- include('../partials/flash') %> 
+</main>
+
+<!--Contact section main page-->
+<main class="main-section">
+
+ <section class="container-fluid contact-page pb-5 pt-3">
+   <div class="row checkout-bg d-flex justify-content-center py-5 mx-3">
+      <div class="col-md-6 d-block align-items-center text-center py-3" style="background: rgba(0, 0, 0, 0.389);border-radius: 25px;">
+         <div class="row contact-container px-5 pl-5">
+            <h1 class="py-2" style="color: rgba(255, 255, 255, 0.863);">CONTACT</h1>
+            <p class="p-style">Need a quote? Get in touch.</p>
+            <!--Contact form-->
+            <form action="/contact" method="POST" class="row contact-form validated-form contact" id="">
+              <div class="mb-3">
+                <label for="name" class="form-label">Fullname</label>
+                <input type="text" class="form-control contact" id="name" name="name" placeholder="Your Full Name" autofocus required>
+               </div>
+               <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control contact" id="email" name="email" placeholder="Email" required>
+               </div>
+               <div class="mb-3">
+                 <label for="subject" class="form-label">Subject</label>
+                 <input type="text" class="form-control contact" id="subject" name="subject" placeholder="Subject" required>
+               </div>
+               <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control contact" id="text" name="text" rows="5" placeholder="Your Message" required></textarea>
+               </div>
+               <button class="btn btn-primary my-5" type="submit" id="submit" name="submit">Send <span><i class="fa-solid fa-paper-plane"></i></span></button> 
+            </form>
+            <div class="text-center">
+               <img src="/images/layerBrand.png" class="img-fluid" style="width: 50px; height:50px">
+               <p class="py-2 px-2" id="layerLabs" style="font-size: 25px;font-weight: 700;">Layerlabs</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+ </main>
+
+<!--Contact form javascript fetching data-->
+<script>
+    $('form').on('submit', (e) => {
+      //   e.preventDefault();
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const subject = $('#subject').val().trim();
+        const text = $('#text').val().trim();
+
+        const data = {
+            name,
+            email,
+            subject,
+            text,
+            
+        }
+
+        $.post('/contact', data, function() {
+            console.log('Server recieved our data');
+        });
+
+    });;
+</script> 
+
+<!-- including cookie consent/scripts/footer partials-->
+<%- include('../partials/cookieConsent') %> 
+<%- include('../partials/scripts') %> 
+<%- include('../partials/footer') %> 
+
+
+</main>   
+</body>
+</html>

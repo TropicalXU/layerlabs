@@ -1,0 +1,200 @@
+<!--Including head/navbar templates from partials folder-->
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %> 
+
+<!--Personal profile about page-->
+<main class="about-me-background py-5">
+<section class="container-fluid header-section-aboutMe header-text py-5">
+  <h1 class="text-center">Personal Profile<span><i class="fa-solid fa-circle-user fa-lg px-4"></i></span></h1>
+  <h2 class="text-center bounceIn" style="color: white;">
+     Get to know me<span id="gradientTextTwo" style="font-size: 45px;">．</span>
+  </h2>
+</section>
+
+<!--About section-->
+<main class="container pt-5 my-5">
+  
+     <section class="container-fluid bio-section">
+        <div class="row py-3">
+           <div class="col-md-6 order-1 py-5">
+              <h2>A Junior Full Stack Web Developer</h2>
+              <h4 class="mt-3 font-black">Skills:</h4>
+              <div class="mt-4">
+                 <h5 style="font-weight: bold;" id="gradientText">HTML, CSS, Javascript, React, Node.js, Express, MongoDB, Mongoose...</h5>
+              </div>
+              <div class="py-5">
+               <a class="fa-brands fa-github fa-2xl" style="color: rgba(0, 0, 0, 0.628);" href="https://github.com/TropicalXU"></a>
+               <a class="fa-brands fa-linkedin-in fa-2xl px-3" style="color: rgba(0, 97, 254, 0.701);" href="https://github.com/TropicalXU"></a>
+              </div>
+              <div>
+              </div>
+           </div>
+           <div class="col-md-6 order-2 py-5">
+              <p class="about-text">
+                 As an individual I am very motivated, positive and goal orientated with a passion to succeed. Over the last 10 years
+                 I have acquired valuable practical experience and knowledge in sales, finance, customer service and teamwork 
+                 allowing me to attain invaluable interpersonal skills, organizational skills and skills allowing me to adapt to new 
+                 systems processes and environments. As of recent I have found great interest in Web Development having so far completed 
+                 a Full Stack Web Development Bootcamp. I am very passionate about all aspects of Web Development and I continuously strive
+                 to educate myself further. Over the course of my time as a developer I have built many applications and websites. I have gained
+                 a great quantity of experience building and creating applications using environments, frameworks and libraries such as HTML, CSS, JavaScript, React
+                 NodeJS, Express, MongoDb and Mongoose. In the proccess I have achieved hands on experience solving problems and managing my workflow
+                 in an efficient and timely manner. 
+              </p>
+              <div class="container d-flex justify-content-center pt-5">
+               <a href="/contact" class="btn  mx-2" id="gradientButton">GET IN TOUCH <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+           </div>
+        </div>
+     </section>
+  <!--Professional development section-->
+  <h2 class="my-5" id="gradientTextTwo">Professional Development</h2>
+
+     <section class="container-fluid project-container my-5"  id="gradientContainer">
+        <div class="row align-items-center">
+           <div class="col-md-6 project-content order-1">
+              <h2 style="color: white;">The Web Developer Bootcamp 2022</h2>
+              <h4 class="mt-3 font-black">by Colt Steele - Udemy</h4>
+              <div class="mt-4">
+                 <h6 id="gradientText">February 2022 - May 2022</h6>
+                 <h6 style="color: white;">Certificate Recieved - May 2022</h6>
+              </div>
+              <div>
+              </div>
+           </div>
+           <div class="container-fluid col-md-6 order-2 project-content">
+              <p class="about-text">
+              <ul style="color: white;">
+                 <h4>Course Content Covered</h4>
+                 <li>Created static HTML and CSS portfolio sites and landing pages</li>
+                 <li>Used CSS Frameworks including Bootstrap 5, Semantic UI, and Bulma</li>
+                 <li>Created full-stack web applications from scratch</li>
+                 <li>Used Postman to monitor and test APIs</li>
+                 <li>Wrote complex web apps with multiple models and data associations</li>
+                 <li>Used NodeJS to write server-side JavaScript</li>
+                 <li>Used Express and MongoDB to create full-stack JS applications</li>
+              </ul>
+              </p>
+              <div class="modal-link dropdown-2 mt-5 d-flex justify-content-center">
+               <span class="modal-item dropbtn-2" style="cursor: pointer;" id="whiteBtnBorder">MORE <i class="fa-solid fa-chevron-down px-1"></i></span>
+             <div class="container-fluid dropdown-content-2 bounceIn">
+               <ul>
+              <li>• Created responsive and accessible layouts</li>
+              <li>• Used Javascript variables, conditionals, loops, functions, arrays and objects</li>
+              <li>• Implemented user authentication</li>
+              <li>• Recognizing and preventing common security exploits like SQL-Injection and XSS</li>
+              <li>• Deploying applications and working with cloud databases</li>
+              <li>• Created a complicated yelp-like application from scratch</li>
+            </ul>
+             </div>
+            </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+     </section>
+
+
+     <!-- <section class="container-fluid project-container my-3"  id="gradientContainer">
+        <div class="row align-items-center">
+           <div class="col-md-6 project-content order-1">
+              <h2 style="color: white;">React Basics</h2>
+              <h4 class="mt-3 font-black">by Bob Ziroll - Scrimba</h4>
+              <div class="mt-4">
+                 <h6 id="gradientText">May 2022 -  June 2022</h6>
+              </div>
+              <div>
+              </div>
+           </div>
+           <div class="container-fluid col-md-6 order-2 project-content">
+              <p class="about-text">
+              <ul style="color: white;">
+                 <h4>Course Content Covered</h4>
+                 <li>Built a React info site</li>
+                 <li>Built an AirBnb Experience clone</li>
+                 <li>Built a meme generator</li>
+                 <li>Worked with JSX</li>
+                 <li>Worked with custom components, props, functions, arrays and mapping</li>
+                 <li>Worked with useState, state arrays and objects</li>
+                 <li>Worked with APIs in React</li>
+                 <li>Worked with useEffect in React</li>
+              </ul>
+              </p>
+              <div class="modal-link dropdown-2 d-flex justify-content-center mt-5">
+               <span class="modal-item dropbtn-2" style="cursor: pointer;" id="whiteBtnBorder">MORE <i class="fa-solid fa-chevron-down px-1"></i></span>
+             <div class="dropdown-content-2 bounceIn">
+               <ul>
+                  <li>• Styling with Classes</li>
+                  <li>• Organinizing of Components</li>
+                  <li>• Setting up a local React environment with Create React App</li>
+                  <li>• Destructuring with props</li>
+                  <li>• Worked with complex state arrays and objects</li>
+                  <li>• Worked with conditional rendering</li>
+                  <li>• Used async functions inside of useEffect</li>
+                </ul>
+             </div>
+            </div>
+           </div>
+        </div>
+     </section> -->
+  <!--Ongoing development section-->
+  <h2 class="py-5" id="gradientTextTwo">Ongoing Development</h2>
+     <section class="container-fluid project-container my-3"  id="gradientContainer">
+        <div class="row align-items-center">
+           <div class="col-md-6 project-content order-1">
+              <h2 style="color: white;">The Modern React Bootcamp</h2>
+              <h4 class="mt-3 font-black">by Colt Steele - Udemy</h4>
+              <div class="mt-4">
+                 <h6 id="gradientText">June 2022 - Current</h6>
+              </div>
+              <div>
+              </div>
+           </div>
+           <div class="container-fluid col-md-6 order-2 project-content">
+              <p class="about-text">
+              <ul style="color: white;">
+                 <h4>Course Content</h4>
+                 <li>React Hooks</li>
+                 <li>State Management with useReducer + use Context(Redux Lite)</li>
+                 <li>React State Management Patterns</li>
+                 <li>Writing dynamically styled components with JSS</li>
+                 <li>Integration of UI libraries like Material UI and Bootstrap into React apps</li>
+                 <li>Integrate React with APIs</li>
+                 <li>Forms and complex validations in React</li>
+              </ul>
+              </p>
+              <div class="modal-link dropdown-2 d-flex justify-content-center mt-5">
+               <span class="modal-item dropbtn-2" style="cursor: pointer;" id="whiteBtnBorder">MORE <i class="fa-solid fa-chevron-down px-1"></i></span>
+             <div class="dropdown-content-2 bounceIn">
+               <ul>
+                  <li>• Master React Router</li>
+                  <li>• Common React Router Patterns</li>
+                  <li>• React design patterns and strategies</li>
+                  <li>• Add complex animations to React projects</li>
+                  <li>• Optimize React components</li>
+                  <li>• Using Context API with Hooks</li>
+                </ul>
+             </div>
+            </div>
+           </div>
+        </div>
+     </section>
+  <!--back button-->
+  <div class="container-fluid d-flex align-items-center mx-3 py-5">
+     <a href="javascript:history.back()" class="btn mx-auto" id="gradientButton"><i class="fa-solid fa-chevron-left"></i> GO BACK</a>
+  </div>
+</main>
+<div class="d-flex justify-content-end pb-3 px-3">
+   <a class="btn scroll-top px-3 py-3" href="#navBrand"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
+<!--including cookie consent partial-->
+<%- include('../partials/cookieConsent') %> 
+</main>
+
+<!--including scripts/footer partials-->
+<%- include('../partials/scripts') %> 
+<%- include('../partials/footer') %> 
+
+</body>
+</html>

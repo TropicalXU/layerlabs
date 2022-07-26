@@ -1,0 +1,56 @@
+<div id="consent-popup" class="hidden cookie-container">
+    <span class="close-btn">&times;</span>
+    <img src="/images/cookie.png" style="width: 80px; height:80px" alt="">
+    <h3>Cookies and Privacy</h3>
+    <p>This website uses cookies to ensure optimal user experience on our website</p>
+    <a href="#" id="accept">Accept Cookies</a>
+    <p style="font-size: 8px;">By using this site you agree and have read our <a href="/legal/privacyPolicy">Privacy Policy</a>
+</div> 
+
+<script>
+    const cookieStorage = {
+       getItem: (item) => {
+           const cookies = document.cookie
+               .split(';')
+               .map(cookie => cookie.split('='))
+               .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
+           return cookies[item];
+       },
+       setItem: (item, value) => {
+           document.cookie = `${item}=${value};`
+       }
+   }
+   
+   const storageType = cookieStorage;
+   const consentPropertyName = 'layer_labs';
+   const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+   const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+   
+   window.onload = () => {
+   
+       const acceptFn = (e) => {
+         e.preventDefault()
+           saveToStorage(storageType);
+           consentPopup.classList.add('hidden');
+       }
+   
+       const closeFn = () => {
+          consentPopup.classList.add('hidden');
+       }
+       const closeBtn = document.querySelector('.close-btn');
+       const consentPopup = document.getElementById('consent-popup');
+       const acceptBtn = document.getElementById('accept');
+       acceptBtn.addEventListener('click', acceptFn);
+       closeBtn.addEventListener('click', closeFn)
+   
+       if (shouldShowPopup(storageType)) {
+           setTimeout(() => {
+               consentPopup.classList.remove('hidden');
+              
+           }, 2000);
+       }
+   
+    
+   };
+   
+</script>

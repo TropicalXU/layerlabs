@@ -1,0 +1,49 @@
+<!--navbar section-->
+<nav class="navbar container-fluid navbar-expand-lg bg-transparent py-3 px-3">
+  <a href="/home"  id="navBrand"><img src="/images/layerBrand.png" class="img-fluid" id="navLogo" style="height:60px;width: 60px;">
+      <span class="mx-2">Layerlabs</span>
+  </a>
+  <a href="#" class="toggle-button my-4">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li>
+        <div class="dropdown">
+          <a id="" class="dropbtn" href="/discover">Discover <i id="" class="fa-solid fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="/discover/personal">Personal <i class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
+            <a href="/discover/business">Business <i class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
+          </div>
+        </div>
+      </li>
+      <li><a id="" href="/about">About</a></li>
+      <li><a id="" href="/projects">Work</a></li>
+      <li><a id="" href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--navbar javascript functionality-->
+<script> 
+   const currentLocation = location.href;
+   const menuItem = document.querySelectorAll('a');
+   const menuLength = menuItem.length;
+   for(let i = 0; i < menuLength; i ++) {
+       if(menuItem[i].href === currentLocation) {
+           menuItem[i].className = 'active'
+       }
+   }
+</script>  
+
+ <script>
+   const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+ navbarLinks.classList.toggle('active')
+})
+ </script>

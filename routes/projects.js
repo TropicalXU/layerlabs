@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 
 //rendering ViewpointIreland/project page
 router.get('/viewpointIreland', async(req, res) => {
-    res.render('projects/viewPointIreland')
+    res.render('projects/viewpointIreland')
 })
 
 //rendering ShirleysArtStudio/project page

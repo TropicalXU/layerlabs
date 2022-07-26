@@ -2,7 +2,7 @@ const express = require('express');
 const catchAsync = require('../utils/catchAsync');
 const sendMail = require('../public/javascripts/mail');
 const router = express.Router();
-const {contactSchema} = require('../schemas')
+const {contactSchema} = require('../schemas');
 
 //rendering the contact page
 router.get('/', (req ,res) => {

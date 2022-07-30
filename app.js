@@ -17,7 +17,7 @@ const projects = require('./routes/projects');
 const discover = require('./routes/discover');
 const contact = require('./routes/contact');
 const legal = require('./routes/legal');
-
+//creating the mongo store
 const MongoDBStore = require("connect-mongo");
 
 

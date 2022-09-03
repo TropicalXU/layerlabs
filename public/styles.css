@@ -12,6 +12,12 @@ html,body {
     .wrapper {width:100%;  margin: 0 auto; } 
 }
 
+@media only screen and (max-width: 480px) {
+    .img {
+      width: 100%;
+    }
+  }
+
 @media (min-width: 576px) {
     .wrapper {width:100%;  margin: 0 auto; } 
 }

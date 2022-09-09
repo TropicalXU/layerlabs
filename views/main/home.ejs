@@ -53,25 +53,52 @@
 </section>
 
 <!--about creator section-->
-<section class="section-img-about img dark-section-round mx-6 py-5 my-4" >
-  <div class="row align-items-center text-center content" >
-     <div class="col-md-6 order-2 order-md-1">
-        <img src="/images/me.JPG" alt="" class="img-fluid" style="width: 300px; height:350px"  id="aboutImg">
+<div id="carouselExampleDark" class="container carousel carousel slide" data-bs-ride="carousel">
+   <div class="carousel-indicators">
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   </div>
+   <div class="carousel-inner">
+     <div class="carousel-item active" data-bs-interval="3000">
+         <div class="row justify-content-center">
+            <div class="col-6">
+               <img src="/images/me.JPG" class="my-4 mx-3" style="width: 250px;height:250px" id="carouselImg"  alt="...">
+            </div>
+            <div class="col-6">
+               <div class="carousel-caption d-none d-md-block">
+                  <h3>Sean Hackett</h3>
+                  <p class="pl-5">Founder and creator of Layerlabs. I am a Full Stack Web Developer based in Toronto. I am a very driven and well organized individual with great attention to detail. I am also very
+                         creative always thinking outside the box, in search of new ideas and possibilities. 
+                     </p>
+               </div>
+            </div>
+         </div>
      </div>
-     <div id="" class="col-md-6 text-center order-1 order-md-2">
-        <div class="row justify-content-center">
-           <div class="col-10 col-lg-8  mb-md-0">
-              <h2>Sean Hackett</h2>
-              <img src="" alt="" class="d-none d-lg-inline">
-              <p>Founder and creator of Layerlabs. I am a Full Stack Web Developer based in Toronto. I am a very driven and well organized individual with great attention to detail. I am also very
-               creative always thinking outside the box, in search of new ideas and possibilities. 
-              </p>
-              <a class="btn mt-3" href="/about/bio" id="gradientBtnReverse">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
-           </div>
-        </div>
+     <div class="carousel-item" data-bs-interval="3000">
+      <img src="/images/layerBrand.png" class="my-4 mx-3" style="width: 250px;height:250px" id="carouselImg"  alt="...">
+       <div class="carousel-caption d-none d-md-block">
+         <h3>Let's get creative!</h3>
+         <p>At Layerlabs I want to bring my own touch giving you the best and most responsive website design possible. What you want from a website can vary yet what matters most is the experience yourself and your users have.</p>
+       </div>
      </div>
-  </div>
-</section>
+     <div class="carousel-item">
+      <img src="/images/email.png" class="my-4 mx-3" style="width: 250px;height:250px" id="carouselImg"  alt="...">
+       <div class="carousel-caption d-none d-md-block">
+         <h3>Get in touch!</h3>
+         <p>Looking for a fully customizable responsive website? Contact me to get a quote!</p>
+       </div>
+     </div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
 
 
 <!--projects section-->

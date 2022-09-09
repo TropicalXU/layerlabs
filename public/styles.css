@@ -483,23 +483,30 @@ body {
 }
 
 /* ABOUT ME SECTION HOME */
-.section-img-about {
-    color: white;
-    padding-top: 80px;
-    padding-bottom: 80px;
+.carousel {
+    background-color: rgb(29, 38, 45);
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgb(184, 184, 184);
 }
 
-@keyframes moveIt {
-    from {background-position: bottom left;}
-    to {background-position: top right;}
+.carousel-item {
+    height: 300px;
 }
 
-#aboutImg {
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgb(32, 32, 32);
-    width: 350px;
-    height: 350px;
-    margin: 30px 0;
+#carouselImg {
+  
+    border-radius: 50%;
+ }
+
+.carousel-item p {
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #5050503b;
+    border-radius: 25px;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 /* DISCOVER SECTION HOME */

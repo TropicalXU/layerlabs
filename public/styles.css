@@ -491,7 +491,7 @@ body {
 }
 
 .carousel-item {
-    height: 300px;
+    height: 350px;
 }
 
 #carouselImg {
@@ -501,7 +501,7 @@ body {
 
 .carousel-item p {
     font-weight: 800;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 20px;
     padding: 20px;
     background-color: #5050503b;

@@ -501,10 +501,10 @@ body {
 
 .carousel-item p {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 20px;
     padding: 20px;
-    background-color: #5050503b;
+    background-color: #50505087;
     border-radius: 25px;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }

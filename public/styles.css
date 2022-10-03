@@ -343,7 +343,7 @@ body {
     background-image: url('https://res.cloudinary.com/dhrs5mwhz/image/upload/v1655053064/LayerLabs/dynamic-wang-Oyycm5TAJBI-unsplash_g0i6tb.jpg');
 }
 
-.personal-header, .business-header, .viewpoint-ireland-header, .define-design-header, .shirleys-art-studio-header {
+.personal-header, .business-header, .viewpoint-ireland-header, .vacay-header, .shirleys-art-studio-header {
     background-size: cover;
     height: 400px;
     background-attachment: fixed;
@@ -356,8 +356,8 @@ body {
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.6);
 }
 
-.define-design-header {
-    background-image: url('https://res.cloudinary.com/dhrs5mwhz/image/upload/v1654226847/DEFINE%20DESIGN/sidekix-media-I58Xjx0zzBQ-unsplash_obbu7o.jpg');
+.vacay-header {
+    background-image: url('/images/vacay2.png');
 }
 
 .shirleys-art-studio-header {
@@ -853,6 +853,11 @@ body {
 
 .project-img-one {
     background-image: url('/images/ViewIrlmap.png');
+    background-size: cover;
+}
+
+.project-img-three {
+    background-image: url('/images/vacay.png');
     background-size: cover;
 }
 
